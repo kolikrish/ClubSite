@@ -62,7 +62,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
             <button
               type="button"
-              className="bg-[#fa4c43] hover:bg-[#ed374f]/90 text-[#ffff] px-8 py-3 fbold tracking-wide rounded-full w-[60%] sm:w-auto shadow-lg transition text-lg"
+              className="bg-[#fa4c43] hover:bg-[#ed374f]/90 text-[#ffff] px-6 sm:px-8 py-3 fbold tracking-wide rounded-full w-full sm:w-auto shadow-lg transition text-base sm:text-lg"
               onClick={() => {
                 const root = document.getElementById("notification-root");
                 if (root) {
@@ -82,7 +82,7 @@ export default function Home() {
             </button>
             <button
               type="button"
-              className="border-2 border-white text-white px-8 py-3 rounded-full fbold  w-[70%] sm:w-auto hover:bg-white hover:text-[#0A1D3D] transition tracking-wide text-lg"
+              className="border-2 border-white text-white px-4 py-3 rounded-full fbold w-full sm:w-auto hover:bg-white hover:text-[#0A1D3D] transition tracking-wide text-base sm:text-lg"
               onClick={() => {
                 const root = document.getElementById("notification-root");
                 if (root) {
