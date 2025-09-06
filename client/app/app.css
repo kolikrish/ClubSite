@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "phantom";
+  src: url('../public/assets/bold.ttf');
+}
+
+@font-face {
+  font-family: "phantom-regular";
+  src: url('../public/assets/regular.ttf');
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.fbold{
+  font-family: phantom;
+}
+
+html,
+body {
+  font-family: phantom-regular;
+  @apply bg-white dark:bg-black;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+.no-drag {
+  user-select: none;               /* Prevents text selection */
+  pointer-events: none;           /* Optional: disables all mouse events */
+  -webkit-user-drag: none;        /* Chrome/Safari */
+  -khtml-user-drag: none;         /* Konqueror */
+  -moz-user-select: none;         /* Firefox */
+  -webkit-user-select: none;      /* Chrome/Safari */
+  -ms-user-select: none;          /* IE/Edge */
+}
+
+::selection{
+  background-color: #fae50075;
+  color: black;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-out forwards;
+}
+
