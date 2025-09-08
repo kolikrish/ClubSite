@@ -37,7 +37,7 @@ export default function Page7() {
       iconColor: "text-[#0A1D3D]",
       title: "Become a Member",
       description: "Join our community of passionate developers and learners",
-      link: "/join",
+      link: "/",
       gradientColors: ["#0A1D3D", "#4B4B4B"],
     },
   ];

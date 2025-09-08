@@ -59,8 +59,8 @@ const Page11: React.FC = () => {
             </h3>
             <p className="mt-3 text-gray-700 leading-relaxed">
               In <span className="text-red-500 font-semibold">Abhyudaya Coding Club</span> was,
-              was founded to create a community fo learners and innovators.{" "}
-              <strong></strong> Involved in Hack Club with over.
+              founded to create a community for learners and innovators.{" "}
+              <strong></strong> Involved in svvv Club with over.
             </p>
             <p className="mt-3 text-gray-700 leading-relaxed">
               Each year , we host workshops , hackathons and interactive sessions where Students gain hands-on

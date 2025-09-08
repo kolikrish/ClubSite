@@ -91,13 +91,30 @@ const projects: Project[] = [
     technologies: ["NextJs", "Typescript", "Tailwind", "NodeJs" , "MongoDB"],
     team: ["Krish Koli","Mandeep Yadav"],
     impact:
-      ".",
+      "The Club website simplifies event and content management for everyone. It builds a centralized hub that fosters collaboration and growth.",
     category: "Web Apps",
     codeLink: "#",
   },
 
   {
     id: 5,
+    title: "Red Light & Green Light Game",
+    status: "completed",
+    date: "Oct 2026",
+    description:
+      "A Squid Game–inspired activity created for freshers at the Induction Program. Move forward on green light and freeze on red — simple, fun, and full of excitement!",
+    problem:
+      "We created this game to help freshers bond, break the ice, and start their journey with fun and teamwork.",
+    technologies: ["NextJs", "Typescript", "Firebase"],
+    team: ["Mandeep Yadav", "Tanay Nagde"],
+    impact:
+      "This game was built for freshers during the club orientation to give them a fun experience while showcasing the coding and programming skills of our club. It attracted over 1000 participants, making it an exciting and memorable introduction.",
+    category: "Web Apps",
+    codeLink: "#",
+  },
+
+  {
+    id: 6,
     title: "Event Management",
     status: "in progress",
     date: "Oct 2024",
@@ -114,7 +131,7 @@ const projects: Project[] = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Time Table Generator",
     status: "in progress",
     date: "Oct 2024",

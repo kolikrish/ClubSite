@@ -150,9 +150,14 @@ export default function Page1() {
             </h1>
             <p className="text-lg sm:text-xl pl-10 sm:pl-15 mt-2">
               Connect with industry experts, attend{" "}
-              <span className="text-[#FF6A00] underline underline-offset-4 hover:decoration-wavy">
+              <a
+                href="https://youtu.be/xylUB1s_l7I?si=5ZwLZ9kTo5_Tk5Aj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#FF6A00] underline underline-offset-4 hover:decoration-wavy"
+              >
                 tech talks
-              </span>
+              </a>
               , and build your professional network within the college
               community.
             </p>
