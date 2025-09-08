@@ -30,15 +30,15 @@ export default function Page1() {
           {(() => {
             const images = [
               {
-                src: "https://hackclub.com/_next/image/?url=%2Fhome%2Fama.png&w=1920&q=75",
+                src:"https://res.cloudinary.com/djtagt9xw/image/upload/v1756979790/WhatsApp_Image_2025-09-04_at_15.22.32_0a943df8_cqpfw0.jpg",
                 alt: "Students coding together",
               },
               {
-                src: "https://hackclub.com/_next/image/?url=%2Fhome%2Fzephyr-spacex.jpeg&w=1920&q=75",
+                src: "https://res.cloudinary.com/djtagt9xw/image/upload/v1757331567/WhatsApp_Image_2025-08-12_at_13.10.54_2eec24a9_dfnqkh.jpg",
                 alt: "Coding event",
               },
               {
-                src: "https://hackclub.com/_next/image/?url=%2Fhackathons%2Fmahacks.jpeg&w=1920&q=75",
+                src: "https://res.cloudinary.com/djtagt9xw/image/upload/v1757332785/DSC01879_agvfeh.jpg",
                 alt: "Teamwork at hackathon",
               },
             ];
@@ -85,7 +85,7 @@ export default function Page1() {
                     {images.map((_, idx) => (
                       <span
                         key={idx}
-                        className={`block w-2 h-2 rounded-full ${idx === current ? "bg-[#FF6A00]" : "bg-gray-300"}`}
+                        className={`block w-2 h-2 rounded-full ${idx === current ? "bg-[#1eff00]" : "bg-gray-300"}`}
                       />
                     ))}
                   </div>

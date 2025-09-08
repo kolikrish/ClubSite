@@ -21,12 +21,6 @@ export const gallery = [
     alt: "Students coding together"
   },
 
-  // {
-  //   src: gallery2,
-  //   alt: "Students coding together"
-  // },
-
-
   {
     src: gallery3,
     alt: "Students coding together"
@@ -40,6 +34,21 @@ export const gallery = [
   {
     src: gallery6,
     alt: "Students coding together"
+  },
+
+  {
+    src: "https://res.cloudinary.com/djtagt9xw/image/upload/v1757334572/DSC01896_s1v91q.jpg",
+    alt: "Students coding together"
+  },
+
+  {
+    src: "https://res.cloudinary.com/djtagt9xw/image/upload/v1757334566/IMG_20241110_102954794_HDR_bzimvb.jpg",
+    alt: "Students coding together",
+  },
+
+  {
+    src: "https://res.cloudinary.com/djtagt9xw/image/upload/v1757332692/DSC01871_nxl9ew.jpg",
+    alt: "Students coding together",
   },
 
 

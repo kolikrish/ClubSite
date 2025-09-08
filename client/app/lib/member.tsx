@@ -44,7 +44,7 @@ export const member = [
         {
         name: "Vidushi Templey",
         position: "Promotion Lead",
-        specialization: "Machine Learning",
+        specialization: "Artificial Intelligence & Machine Learning",
         image: "https://res.cloudinary.com/djtagt9xw/image/upload/v1756977799/WhatsApp_Image_2025-09-04_at_14.22.29_8fc87c45_kh3gtr.jpg",
         linkedin: "linkedin.com/in/vidushi-temley-b687a9256",
         },

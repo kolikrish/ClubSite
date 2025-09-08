@@ -96,50 +96,6 @@ export default function HackthonCaro() {
         </p>
       </div>
 
-      {/* <div className="relative overflow-hidden py-5">
-
-        <div
-          ref={sliderRef}
-          className="flex gap-16 slider-container"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          style={{
-            animation: `slide ${5 * domains.length}s linear infinite`,
-            animationPlayState: "running",
-          }}
-        >
-          {extendedDomains.map((domain, index) => {
-            const IconComponent = domain.icon;
-            const { bg, text, bgImage } = getCardColors(index);
-            return (
-              <div
-                key={`${domain.id}-${index}`}
-                className={`flex-none w-52 h-52 sm:w-96 sm:h-70 rounded-2xl bg-gradient-to-br ${bg} px-0 py-0 ${text} transition-all duration-500 hover:scale-105 cursor-pointer group backdrop-blur-sm flex flex-col items-center justify-between`}
-                style={{
-                  backgroundImage: `linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(0,0,0,0.1)), url('${bgImage}')`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  gap: 0,
-                  marginRight: "0.5rem", // Add a small margin to close the gap
-                }}>
-
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/80 flex items-center justify-center border-2 border-white shadow mb-0 mt-8">
-                  <IconComponent className="w-10 h-10 sm:w-12 sm:h-12 text-[#0A1D3D]" />
-                </div>
-
-                <h3 className="text-base sm:text-lg font-bold text-center group-hover:translate-x-1 transition-all duration-500 mb-1">
-                  {domain.title} Hackathon
-                </h3>
-
-                <p className="text-xs sm:text-sm opacity-90 mb-8 mt-1 text-center leading-snug sm:leading-relaxed">
-                  Join us for an exciting hackathon. Code. Create. Collaborate.
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
-
       <style>{`
                 @keyframes slide {
                     0% {

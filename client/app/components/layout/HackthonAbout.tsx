@@ -20,15 +20,16 @@ const HackathonAbout: React.FC = () => {
       <div className="absolute inset-0 bg-black/20 bg-opacity-70 z-10 flex items-center justify-center px-4">
         <div className="text-center text-white max-w-5xl">
           <h2 className="text-2xl font-semibold text-blue-900 tracking-widest mb-2">
-            HACKATHONS.HACKCLUB.COM
+            AbhyudayaClub.vercel.com
           </h2>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6">
             Spread the word about your hackathon.
           </h1>
           <p className="text-lg sm:text-2xl text-gray-300 mb-8 leading-relaxed">
-            Reach hackers worldwide by listing your event on <span className="text-white font-semibold">hackathons.hackclub.com</span>, 
-            the first Google search result for <span className="italic">&quot;high school hackathons.&quot;</span> 
-            Your event will also be emailed to a network of high school hackers in your area.
+            <span className="text-white font-semibold">AbhyudayaClub.vercel.com </span>
+             is a platform for passionate coders and innovators to connect, collaborate, and grow. 
+            We organize coding events, hackathons, and workshops that reach students across campuses 
+            and provide opportunities to learn, build, and showcase skills.
           </p>
           <button className="bg-gradient-to-r from-yellow-400 to-red-500 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg hover:opacity-90 transition">
             ADD YOUR HACKATHON →

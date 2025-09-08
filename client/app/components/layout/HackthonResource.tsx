@@ -9,12 +9,12 @@ const HackathonResource: React.FC = () => {
       </h3>
 
       {/* Title */}
-      <h2 className="text-4xl sm:text-6xl font-extrabold text-gray-900 mb-12 leading-tight max-w-4xl mx-auto transition-colors duration-300 hover:text-purple-700">
-        Resources so you can organize an{' '}
+      <h2 className="text-4xl sm:text-6xl font-extrabold text-purple-700 mb-12 leading-tight max-w-4xl mx-auto transition-colors duration-300">
+        Resources to help you learn, collaborate, and{' '}
         <span className="bg-teal-300 text-teal-900 px-2 rounded-md inline-block transition-colors duration-300 hover:bg-teal-400 hover:text-teal-950">
-          amazing
+        organize coding
         </span>{' '}
-        hackathon.
+        events.
       </h2>
 
       {/* Cards */}
@@ -30,11 +30,11 @@ const HackathonResource: React.FC = () => {
               />
             </div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-3 sm:mt-0 sm:ml-5 transition-colors duration-300 group-hover:text-gray-200">
-              Slack community
+              Coding Community
             </h3>
           </div>
           <p className="text-left sm:text-left text-white/90 text-lg sm:text-2xl md:text-3xl transition-colors duration-300 group-hover:text-white">
-            Chat in Slack for support with organizing your hackathon, from finding a venue to marketing your event.
+            Connect with fellow students in Abhyudaya Coding Club. Share ideas, form teams, and work on exciting projects together.
           </p>
         </div>
 
@@ -49,11 +49,11 @@ const HackathonResource: React.FC = () => {
               />
             </div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-3 sm:mt-0 sm:ml-5 transition-colors duration-300 group-hover:text-gray-200">
-              Marketing
+              Project Resources
             </h3>
           </div>
           <p className="text-left sm:text-left text-white/90 text-lg sm:text-2xl md:text-3xl transition-colors duration-300 group-hover:text-white">
-            Get your event listed on Google&apos;s front page, emailed to nearby teens calendar&apos;s 3K+ monthly users.
+            Get access to coding challenges, project repositories, to guide you in building real-world applications.
           </p>
         </div>
       </div>

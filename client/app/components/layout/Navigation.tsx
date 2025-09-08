@@ -19,9 +19,9 @@ const Navigation = () => {
     { path: "/events", label: "Events" },
     { path: "/hackathons", label: "Hackathons" },
     { path: "/Gallery", label: "Gallery" },
-    // { path: "/blogs", label: "Blogs" },
     { path: "/projects", label: "Projects" },
-    { path: "/admin", label: "Admin" },
+    // { path: "/admin", label: "Admin" },
+    // { path: "/blogs", label: "Blogs" },
   ];
 
   const isActive = (path: string): boolean => {

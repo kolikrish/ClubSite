@@ -36,7 +36,7 @@ const Page11: React.FC = () => {
           {/* Image Card */}
           <div className="rounded-xl overflow-hidden shadow-md transition-transform duration-500 hover:scale-105 hover:shadow-xl hover:rotate-2" style={{ willChange: "transform" }}>
             <img
-              src="https://hackclub.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fouternet-110.c7a20868.jpg&w=640&q=75" // replace with actual image path
+              src="https://res.cloudinary.com/djtagt9xw/image/upload/v1757332685/DSC01896_krxo4h.jpg" // replace with actual image path
               alt="Hack Club Event"
               width={600}
               height={400}
@@ -44,7 +44,7 @@ const Page11: React.FC = () => {
               loading="lazy"
             />
             <p className="bg-gray-100 text-gray-700 text-sm px-4 py-2">
-              Each year, 1000s of teenagers attend Hack Club events like this
+              Each year , 50+ of people recruit the abhyudaya coding club events.
             </p>
           </div>
 

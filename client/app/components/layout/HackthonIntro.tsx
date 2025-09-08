@@ -3,7 +3,7 @@ import React from "react";
 import hackthon1 from '/images/hackthon1.jpg'
 import hackthon2 from '/images/hackthon2.jpg'
 import hackthon3 from '/images/hackthon3.jpg'
-import workshop from "/images/workshop.jpg";
+import hackthon4 from "/images/hackthon4.jpg";
 
 const HackathonIntro: React.FC = () => {
   return (
@@ -69,10 +69,10 @@ const HackathonIntro: React.FC = () => {
             desc: "Present your finished project to peers and judges, and celebrate your creativity and hard work.",
           },
           {
-            img: workshop,
-            alt: "Fun & Networking",
-            title: "Fun & Networking",
-            desc: "Enjoy games, snacks, and make new friends from different backgrounds who share your passion for technology.",
+            img: hackthon4,
+            alt: "Smart Techindore Hackthone",
+            title: "Smart Techindore Hackthone",
+            desc: "Showcase your ideas, share your code, and inspire others with your innovation.",
           },
         ];
         return (
