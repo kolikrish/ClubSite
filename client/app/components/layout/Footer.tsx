@@ -27,21 +27,21 @@ const Footer = () => {
         {/* Centered and justify-between flex container */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Quick Links */}
-          <div className="mb-6 md:mb-0 flex-1 flex flex-col items-center md:items-start">
-            <h4 className="text-white font-bold text-md mb-3 text-center md:text-left">Quick Links</h4>
-            <ul className="space-y-2 text-md">
+          <div className="mb-6 md:mb-0 flex-1 flex flex-col items-center">
+            <h4 className="text-white font-bold text-md mb-3 text-center">Quick Links</h4>
+            <ul className="space-y-2 text-md flex flex-col items-center">
               <li>
-                <Link to="/hackathons" className="text-[#D1D5DB] hover:text-[#F5B282] transition-colors">
+                <Link to="/hackathons" className="text-[#D1D5DB] hover:text-[#F5B282] text-center transition-colors">
                   Competition and Hackathons
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#D1D5DB] hover:text-[#F5B282] transition-colors">
+                <Link to="/" className="text-[#D1D5DB] hover:text-[#F5B282] text-center transition-colors">
                   Teams
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="text-[#D1D5DB] hover:text-[#F5B282] transition-colors">
+                <Link to="/gallery" className="text-[#D1D5DB] hover:text-[#F5B282] text-center transition-colors">
                   Gallery
                 </Link>
               </li>
@@ -74,21 +74,21 @@ const Footer = () => {
           </div>
 
           {/* Resources */}
-          <div className="flex-1 flex flex-col items-center md:items-end">
-            <h4 className="text-white font-bold text-md mb-3 text-center md:text-right">Resources</h4>
-            <ul className="space-y-2 text-md">
+          <div className="flex-1 flex flex-col items-center">
+            <h4 className="text-white font-bold text-md mb-3 text-center">Resources</h4>
+            <ul className="space-y-2 text-md flex flex-col items-center">
               <li>
-                <Link to="/events" className="text-[#D1D5DB] hover:text-[#F5B282] transition-colors">
+                <Link to="/events" className="text-[#D1D5DB] hover:text-[#F5B282] transition-colors text-center">
                   Events
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="text-[#D1D5DB] hover:text-[#F5B282] transition-colors">
+                <Link to="/projects" className="text-[#D1D5DB] hover:text-[#F5B282] transition-colors text-center">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#D1D5DB] hover:text-[#F5B282] transition-colors">
+                <Link to="/" className="text-[#D1D5DB] hover:text-[#F5B282] transition-colors text-center">
                   Scrapbook
                 </Link>
               </li>
