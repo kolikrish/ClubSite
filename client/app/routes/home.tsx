@@ -26,101 +26,161 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center h-[100vh] sm:h-[90vh]">
-        <img
-          src="/images/hero.webp"
-          alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-[#0A1D3D]/50 backdrop-blur-[0.5px]"></div>
+      {/* Hero Section with Image Popup */}
+      {(() => {
+        // Use React.useState for popup state
+        const [showPopup, setShowPopup] = React.useState(false);
 
-        <div className="relative max-w-[95vw] mx-auto px-6 sm:px-32 pt-20 sm:pt-14 h-full flex flex-col justify-center">
-          <div className="flex items-center gap-6 mb-4 sm:mb-2 ">
-            <div>
-              <h2 className="text-[#f97385] fbold text-xl sm:text-2xl font-bold tracking-wider uppercase">
-                Welcome to Abhyudaya Coding Club
-              </h2>
+        // The image to show in popup (can be same as hero or different)
+        const popupImage =
+          "https://res.cloudinary.com/djtagt9xw/image/upload/v1758686699/web_designing_event_1_jh9bw5.jpg";
+
+        return (
+          <section className="relative bg-cover bg-center h-[100vh] sm:h-[90vh]">
+            <img
+              // src="/images/hero.webp"
+              src="https://res.cloudinary.com/djtagt9xw/image/upload/v1758685560/20250822_153145_luobfm.jpg"
+              alt="Hero Background"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-[#0A1D3D]/50 backdrop-blur-[0.5px]"></div>
+
+            <div className="relative max-w-[95vw] mx-auto px-6 sm:px-32 pt-20 sm:pt-14 h-full flex flex-col justify-center">
+              <div className="flex items-center gap-6 mb-4 sm:mb-2 ">
+                <div>
+                  <h2 className="text-[#f97385] fbold text-xl sm:text-2xl font-bold tracking-wider uppercase">
+                    Welcome to Abhyudaya Coding Club
+                  </h2>
+                </div>
+              </div>
+              <h3 className="fbold text-white text-4xl sm:text-6xl tracking-[1.5px] mb-2 max-w-[80vw] ">
+                Igniting the passion in{" "}
+                <span className="inline-block bg-[#ed374f] text-white px-2 sm:px-4 sm:py-2 rounded-md -rotate-4 transform shadow-md hover:rotate-0 hover:scale-105 transition-transform duration-300 ease-in-out">
+                  future coders
+                </span>{" "}
+                to lead with technology.
+              </h3>
+              <p className="text-[#D1D5DB] text-md sm:text-xl max-w-2xl mb-5 sm:mb-10">
+                Dive into the world of innovation, creativity, and collaboration.
+                Join us to build projects, compete in hackathons, and shape your
+                tech journey.
+              </p>
+
+              {/* Notification Popup */}
+              {typeof window !== "undefined" && (
+                <div id="notification-root" style={{ position: "fixed", top: 24, right: 24, zIndex: 9999 }}></div>
+              )}
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                <button
+                  type="button"
+                  className="bg-[#fa4c43] hover:bg-[#ed374f]/90 text-[#ffff] px-6 sm:px-8 py-3 fbold tracking-wide rounded-full w-full sm:w-auto shadow-lg transition text-base sm:text-lg"
+                  onClick={() => {
+                    const root = document.getElementById("notification-root");
+                    if (root) {
+                      const el = document.createElement("div");
+                      el.className =
+                        "bg-[#fff] text-black px-6 py-3 rounded-lg shadow-lg mb-2 animate-fade-in";
+                      el.innerText = "Thank you for your interest! Registration will open soon.";
+                      root.appendChild(el);
+                      setTimeout(() => {
+                        el.classList.add("animate-fade-out");
+                        setTimeout(() => root.removeChild(el), 400);
+                      }, 2000);
+                    }
+                  }}
+                >
+                  JOIN THE CLUB
+                </button>
+                {/* <button
+                  type="button"
+                  className="border-2 border-white text-white px-4 py-3 rounded-full fbold w-full sm:w-auto hover:bg-white hover:text-[#0A1D3D] transition tracking-wide text-base sm:text-lg"
+                  onClick={() => {
+                    const root = document.getElementById("notification-root");
+                    if (root) {
+                      const el = document.createElement("div");
+                      el.className =
+                        "bg-[#fff] text-black px-6 py-3 rounded-lg shadow-lg mb-2 animate-fade-in";
+                      el.innerText = "Upcoming events will be announced soon. Stay tuned!";
+                      root.appendChild(el);
+                      setTimeout(() => {
+                        el.classList.add("animate-fade-out");
+                        setTimeout(() => root.removeChild(el), 400);
+                      }, 2000);
+                    }
+                  }}
+                >
+                  UPCOMING EVENTS
+                </button> */}
+                {/* Button to open image popup */}
+                <button
+                  type="button"
+                  className="border-2 border-[#fa4c43] text-[#fa4c43] px-4 py-3 rounded-full fbold w-full sm:w-auto hover:bg-[#fa4c43] hover:text-white transition tracking-wide text-base sm:text-lg"
+                  onClick={() => setShowPopup(true)}
+                >
+                  UPCOMING EVENT
+                </button>
+              </div>
+              {/* Image Popup Modal */}
+              {(() => {
+                // Show popup on first load
+                React.useEffect(() => {
+                  setShowPopup(true);
+                  // eslint-disable-next-line
+                }, []);
+                return (
+                  showPopup && (
+                    <div
+                      className="fixed inset-0 z-[10000] flex items-center justify-center bg-black/70 backdrop-blur-sm"
+                      style={{ animation: "fadeIn 0.2s" }}
+                    >
+                      <div className="relative bg-white rounded-xl shadow-2xl p-2 sm:p-4 max-w-[90vw] max-h-[90vh] flex flex-col items-end">
+                        {/* Close Button */}
+                        <button
+                          onClick={() => setShowPopup(false)}
+                          className="absolute top-2 right-2 text-gray-700 hover:text-red-500 bg-white rounded-full p-1 shadow transition"
+                          aria-label="Close"
+                          style={{
+                            fontSize: "1.5rem",
+                            lineHeight: 1,
+                            fontWeight: "bold",
+                            zIndex: 10,
+                          }}
+                        >
+                          &times;
+                        </button>
+                        <img
+                          src={popupImage}
+                          alt="Popup"
+                          className="rounded-lg max-w-full max-h-[75vh] object-contain border border-gray-200"
+                          style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.25)" }}
+                        />
+                      </div>
+                    </div>
+                  )
+                );
+              })()}
+              <style>
+                {`
+                  @keyframes fadeIn {
+                    from { opacity: 0; transform: scale(0.98);}
+                    to { opacity: 1; transform: scale(1);}
+                  }
+                  @keyframes fadeOut {
+                    from { opacity: 1; transform: scale(1);}
+                    to { opacity: 0; transform: scale(0.98);}
+                  }
+                  .animate-fade-in {
+                    animation: fadeIn 0.3s;
+                  }
+                  .animate-fade-out {
+                    animation: fadeOut 0.4s forwards;
+                  }
+                `}
+              </style>
             </div>
-          </div>
-          <h3 className="fbold text-white text-4xl sm:text-6xl tracking-[1.5px] mb-2 max-w-[80vw] ">
-            Igniting the passion in{" "}
-            <span className="inline-block bg-[#ed374f] text-white px-2 sm:px-4 sm:py-2 rounded-md -rotate-4 transform shadow-md hover:rotate-0 hover:scale-105 transition-transform duration-300 ease-in-out">
-              future coders
-            </span>{" "}
-            to lead with technology.
-          </h3>
-          <p className="text-[#D1D5DB] text-md sm:text-xl max-w-2xl mb-5 sm:mb-10">
-            Dive into the world of innovation, creativity, and collaboration.
-            Join us to build projects, compete in hackathons, and shape your
-            tech journey.
-          </p>
-
-          {/* Notification Popup */}
-          {typeof window !== "undefined" && (
-            <div id="notification-root" style={{ position: "fixed", top: 24, right: 24, zIndex: 9999 }}></div>
-          )}
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-            <button
-              type="button"
-              className="bg-[#fa4c43] hover:bg-[#ed374f]/90 text-[#ffff] px-6 sm:px-8 py-3 fbold tracking-wide rounded-full w-full sm:w-auto shadow-lg transition text-base sm:text-lg"
-              onClick={() => {
-                const root = document.getElementById("notification-root");
-                if (root) {
-                  const el = document.createElement("div");
-                  el.className =
-                    "bg-[#fff] text-black px-6 py-3 rounded-lg shadow-lg mb-2 animate-fade-in";
-                  el.innerText = "Thank you for your interest! Registration will open soon.";
-                  root.appendChild(el);
-                  setTimeout(() => {
-                    el.classList.add("animate-fade-out");
-                    setTimeout(() => root.removeChild(el), 400);
-                  }, 2000);
-                }
-              }}
-            >
-              JOIN THE CLUB
-            </button>
-            <button
-              type="button"
-              className="border-2 border-white text-white px-4 py-3 rounded-full fbold w-full sm:w-auto hover:bg-white hover:text-[#0A1D3D] transition tracking-wide text-base sm:text-lg"
-              onClick={() => {
-                const root = document.getElementById("notification-root");
-                if (root) {
-                  const el = document.createElement("div");
-                  el.className =
-                    "bg-[#fff] text-black px-6 py-3 rounded-lg shadow-lg mb-2 animate-fade-in";
-                  el.innerText = "Upcoming events will be announced soon. Stay tuned!";
-                  root.appendChild(el);
-                  setTimeout(() => {
-                    el.classList.add("animate-fade-out");
-                    setTimeout(() => root.removeChild(el), 400);
-                  }, 2000);
-                }
-              }}
-            >
-              UPCOMING EVENTS
-            </button>
-          </div>
-          <style>
-            {`
-              @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(-10px);}
-                to { opacity: 1; transform: translateY(0);}
-              }
-              @keyframes fadeOut {
-                from { opacity: 1; transform: translateY(0);}
-                to { opacity: 0; transform: translateY(-10px);}
-              }
-              .animate-fade-in {
-                animation: fadeIn 0.3s;
-              }
-              .animate-fade-out {
-                animation: fadeOut 0.4s forwards;
-              }
-            `}
-          </style>
-        </div>
-      </section>
+          </section>
+        );
+      })()}
 
       {/* Page1 : Explore the world of coding with us.*/}
       <section className="pt-4 pb-8 sm:pt-8 sm:pb-15">

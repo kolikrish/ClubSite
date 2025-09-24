@@ -46,10 +46,10 @@ export const gallery = [
     alt: "Students coding together",
   },
 
-  {
-    src: "https://res.cloudinary.com/djtagt9xw/image/upload/v1757332692/DSC01871_nxl9ew.jpg",
-    alt: "Students coding together",
-  },
+  // {
+  //   src: "https://res.cloudinary.com/djtagt9xw/image/upload/v1758685283/WhatsApp_Image_2025-09-24_at_00.13.13_fb3e6ec9_ylxsvd.jpg",
+  //   alt: "Students coding together",
+  // },
 
 
 ];
