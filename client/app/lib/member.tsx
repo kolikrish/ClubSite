@@ -9,7 +9,7 @@ export const member = [
         {
         name: "Akshat Mishra",
         position: "Vice President",
-        specialization: "Full Stack Developer | React Native",
+        specialization: "Full Stack Developer | React Native | DevOps",
         image: "https://res.cloudinary.com/djtagt9xw/image/upload/v1756977813/WhatsApp_Image_2025-09-04_at_14.21.18_ce1f10c8_fswej2.jpg",
         linkedin: "https://www.linkedin.com/in/akshat-mishra-947973289?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmTmKb860TFqpS23dVRVnwA%3D%3D"
         },
@@ -30,9 +30,16 @@ export const member = [
         {
         name: "Krish Koli",
         position: "Development Lead",
-        specialization: "Full Stack Developer | Data Science",
+        specialization: "Full Stack Developer",
         image: "https://res.cloudinary.com/djtagt9xw/image/upload/v1756977817/WhatsApp_Image_2025-09-04_at_14.21.19_581e8c6d_fmdnnb.jpg",
         linkedin: "linkedin.com/in/krish-koli-21291a285",
+        },
+        {
+        name: "Uday Pareta",
+        position: "Co-Development Lead",
+        specialization: "Full Stack Developer",
+        image: "https://res.cloudinary.com/djtagt9xw/image/upload/v1768036435/Uday_pareta_fawqlp.jpg",
+        linkedin: "https://www.linkedin.com/in/uday-pareta-b114aa284"
         },
         {
         name: "Abhijeet Mehta",
