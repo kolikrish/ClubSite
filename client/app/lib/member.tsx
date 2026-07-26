@@ -32,7 +32,7 @@ export const member = [
         position: "Development Lead",
         specialization: "Full Stack Developer",
         image: "https://res.cloudinary.com/djtagt9xw/image/upload/v1756977817/WhatsApp_Image_2025-09-04_at_14.21.19_581e8c6d_fmdnnb.jpg",
-        linkedin: "linkedin.com/in/krish-koli-21291a285",
+        linkedin: "https://www.linkedin.com/in/krish-koli-21291a285",
         },
         {
         name: "Uday Pareta",
@@ -46,20 +46,27 @@ export const member = [
         position: "Managing Lead",
         specialization: "Data Science",
         image: "https://res.cloudinary.com/djtagt9xw/image/upload/v1756977821/WhatsApp_Image_2025-08-22_at_12.49.55_35968c3d_wfdovr.jpg",
-        linkedin: "linkedin.com/in/abhijeet-m-mehta-6ab3b2273"
+        linkedin: "https://www.linkedin.com/in/abhijeet-m-mehta-6ab3b2273"
         },
         {
-        name: "Vidushi Templey",
+        name: "Vidushi Temley",
         position: "Promotion Lead",
         specialization: "Artificial Intelligence & Machine Learning",
         image: "https://res.cloudinary.com/djtagt9xw/image/upload/v1756977799/WhatsApp_Image_2025-09-04_at_14.22.29_8fc87c45_kh3gtr.jpg",
-        linkedin: "linkedin.com/in/vidushi-temley-b687a9256",
+        linkedin: "https://www.linkedin.com/in/vidushi-temley-b687a9256",
         },
         {
         name: "Uday Vishwakarma",
         position: "Media & Content Lead",
         specialization: "Content Creation & Graphic Designer",
         image: "https://res.cloudinary.com/djtagt9xw/image/upload/v1756977806/WhatsApp_Image_2025-09-04_at_14.29.35_92e448cc_r0yxqi.jpg",
-        linkedin: ".",
-        }
+        linkedin: "https://www.linkedin.com/company/abhyudaya-coding-club/",
+        },
+        {
+        name: "Kshitij Pratap Singh Tomar",
+        position: "Co-Media Lead",
+        specialization: "Content Creation & Graphic Designer",
+        image: "/images/kshitij.jpeg",
+        linkedin: "https://www.linkedin.com/company/abhyudaya-coding-club/",
+        },
       ]

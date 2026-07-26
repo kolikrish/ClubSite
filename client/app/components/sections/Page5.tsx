@@ -38,13 +38,14 @@ export default function Page5() {
               <p className="text-sm mt-4 italic">{leader.quote}</p>
               <div className="mt-2">
                 <BsLinkedin className="inline-block mr-1 text-blue-600" />
-                <Link
-                  to={leader.link}
+                <a
+                  href={leader.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 underline underline-offset-2 hover:decoration-wavy"
                 >
                   LinkedIn Profile
-                </Link>
+                </a>
               </div>
             </div>
           </div>

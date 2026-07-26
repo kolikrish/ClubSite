@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router";
+
 export default function Page1() {
   return (
     <div className="bg-white flex flex-col max-w-[95vw] h-auto mx-auto px-6 sm:px-32 text-[#0A1D3D] ">
@@ -131,12 +133,12 @@ export default function Page1() {
             </h1>
             <p className="text-lg sm:text-xl pl-10 sm:pl-15 mt-2">
               Participate in hands-on workshops, hackathons, and collaborative{" "}
-              <a
-                href="/projects"
+              <Link
+                to="/projects"
                 className="text-[#FF6A00] underline underline-offset-4 hover:decoration-wavy"
               >
                 projects
-              </a>{" "}
+              </Link>{" "}
               to enhance your coding skills.
             </p>
           </div>

@@ -32,7 +32,7 @@ export default function Page4() {
                         <div className="flex items-center justify-between lg:justify-start lg:space-x-4 bg-gray-50 lg:bg-transparent py-2 lg:p-0 rounded-lg lg:rounded-none">
                             <div className="flex items-center space-x-2">
                                 <img
-                                    src="images/logo.jpeg"
+                                    src="/images/logo.jpeg"
                                     alt="logo"
                                     className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-gray-600/40"
                                 />
@@ -46,7 +46,7 @@ export default function Page4() {
                         <div className="flex items-center justify-between lg:justify-start lg:space-x-4 opacity-75 bg-gray-50 lg:bg-transparent py-2 lg:p-0 rounded-lg lg:rounded-none">
                             <div className="flex items-center space-x-2">
                                 <img
-                                    src="images/logo.jpeg"
+                                    src="/images/logo.jpeg"
                                     alt="logo"
                                     className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-gray-600/40"
                                 />
@@ -60,7 +60,7 @@ export default function Page4() {
                         <div className="flex items-center justify-between lg:justify-start lg:space-x-4 opacity-50 bg-gray-50 lg:bg-transparent py-2 lg:p-0 rounded-lg lg:rounded-none">
                             <div className="flex items-center space-x-2">
                                 <img
-                                    src="images/logo.jpeg"
+                                    src="/images/logo.jpeg"
                                     alt="logo"
                                     className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-gray-600/40"
                                 />
@@ -74,7 +74,7 @@ export default function Page4() {
                         <div className="hidden md:flex items-center justify-between lg:justify-start lg:space-x-4 opacity-25 bg-gray-50 lg:bg-transparent py-2 lg:p-0 rounded-lg lg:rounded-none">
                             <div className="flex items-center space-x-2">
                                 <img
-                                    src="images/logo.jpeg"
+                                    src="/images/logo.jpeg"
                                     alt="logo"
                                     className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-gray-600/40"
                                 />

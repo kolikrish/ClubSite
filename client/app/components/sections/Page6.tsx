@@ -39,13 +39,14 @@ export default function Page6() {
           <p className="text-sm text-gray-600 mb-1">
             Specialization: {member.specialization}
           </p>
-          <Link
-            to={member.linkedin}
+          <a
+            href={member.linkedin}
             target="_blank"
-            className="text-blue-600 hover:text-blue-800 mt-4 underline underline-offset-2 hover:decoration-wavy"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 mt-4 inline-block underline underline-offset-2 hover:decoration-wavy"
           >
             LinkedIn
-          </Link>
+          </a>
         </div>
         </div>
       ))}
