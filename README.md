@@ -108,4 +108,4 @@ Contributions are welcome! If you'd like to report a bug or request a feature:
 
 ---
 
-Made with ❤️ by **Abhyudaya Coding Club**.
+Made with ❤️ by **Abhyudaya Coding Club**.
